@@ -1,0 +1,8 @@
+set tacacs enable
+set tacacs command accounting enable
+set tacacs command authorization enable
+set tacacs server 1 timeout 10
+set tacacs server 2 timeout 10
+set tacacs server 1 10.X.1.1 49 r2d2@p!dfd$2
+set tacacs server 2 10.X.1.2 49 r2d2@p!dfd$2
+

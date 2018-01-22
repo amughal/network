@@ -1,0 +1,7 @@
+[Authentication]
+username=admin
+password=admin_password
+
+[EAPI]
+username=user2
+password=user2_password

@@ -1,0 +1,16 @@
+conf
+tacacs-server host 10.X.1.1 key r2d2@p!dfd$2
+tacacs-server host 10.X.1.2 key r2d2@p!dfd$2
+tacacs-server host 10.X.1.3 key r2d2@p!dfd$2
+tacacs-server host 10.X.1.4 key r2d2@p!dfd$2
+aaa authentication ssh login tacacs local
+aaa authentication ssh enable tacacs local
+aaa authentication console login tacacs local
+aaa authentication console enable tacacs local
+aaa authentication login privilege-mode
+aaa accounting update periodic 5 
+aaa accounting commands interim-update tacacs
+aaa accounting exec start-stop tacacs
+aaa accounting system start-stop tacacs
+save
+
